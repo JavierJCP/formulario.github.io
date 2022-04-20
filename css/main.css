@@ -1,0 +1,217 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: rgb(169, 215, 233);
+}
+/***************ENCABEZADO********************/
+header{
+  width: 100%;
+  min-height: 75px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: space-between;
+  background-color: #010101;
+}
+.contenedor-logo{
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.logo{
+  margin: 5px;
+}
+.logo a{
+  color: white;
+  font-size: 25px;
+}
+.logo-info button{
+  background-color: #6FFF84;
+  border: none;
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 5px;
+}
+.logo-info button:hover{
+  color: white;
+  background-color: #86c18f;
+}
+.contenedor-redes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.resdes-boton{
+  height: 50px;
+  border: none;
+  margin: 0 10px;
+  background-color: #3e3e3e9d;
+  border-radius: 10px;
+  color: white;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.resdes-boton:hover{
+  background-color: #6e6e6e9d;
+}
+.resdes-boton-inscribirse{
+  height: 50px;
+  border: none;
+  margin: 0 10px;
+  background-color: #6FFF84;
+  border-radius: 10px;
+  color: black;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.resdes-boton-inscribirse:hover{
+  background-color: #86c18f;
+  color: white;
+}
+.resdes-boton a{
+  color: white;
+  padding: 0 20px;
+  font-size: 20px;
+}
+/********icono de barras****************/
+.icono-barras{
+  margin: 10px 10px 0;
+}
+.icono-barras a{
+  color: #1b671b;
+  font-size: 30px;
+}
+/************titulo formulario**********/
+.formulario-titulo{
+  text-align: center;
+  font-size: 2em;
+}
+
+/*******formulario*************/
+.contenedor-formulario{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario{
+  width: 80%;
+  min-height: 500px;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #F3F3F3;
+  border-radius: 20px;
+}
+#descripcion {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2em;
+  text-align: center;
+  margin: 20px 0;
+}
+.datos{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 10px;
+  align-items: baseline;
+}
+.datos label{
+  text-align: right;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.datos input{
+  font-size: 15px;
+  max-width: 300px;
+  height: 35px;
+  border-radius: 7px;
+  border: 1px solid lightgray;
+  padding-left: 5px;
+}
+
+.datos select{
+  font-size: 15px;
+  max-width: 300px;
+  height: 35px;
+  border-radius: 7px;
+  border: 1px solid lightgray;
+  padding-left: 5px;
+}
+
+.datos ul{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.datos li{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;  
+  margin-left: 10px;
+}
+#describe{
+  max-width: 300px;
+  height: 75px;
+  border-radius: 7px;
+  border: 1px solid lightgray;
+}
+
+/*****Boton enviar*********/
+.contenedor-boton-enviar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boton-enviar{
+  padding: 10px 20px;
+  margin: 20px;
+  background-color:cornflowerblue;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/******************************************RESPONSIVE*************************************/
+@media (max-width: 670px) {
+  .formulario{
+    width: 90%;
+  }
+  .logo a{
+    font-size: 15px;
+  }
+  .logo-info h3, i, button{
+    font-size: 0.75em;
+  }
+  .resdes-boton{
+    height: 20px;
+    margin: 0 5px;
+    padding: 0 5px;
+  }
+  .resdes-boton-inscribirse{
+    height: 20px;
+    margin: 0 5px;
+    padding: 0 5px;
+  }
+  .resdes-boton a{
+    padding: 0 5px;
+    font-size: 7px;
+  }
+}
+@media (max-width: 400px){
+  .datos{
+    display: flex;
+    flex-direction:column;
+  }
+}
+  

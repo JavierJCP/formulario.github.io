@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="icon" href="./icono/avatar_engineer_people_person_profile_user_icon_123386.ico">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/fbca97aad7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="encabezado">
+    <div class="contenedor-logo">
+      <div class="logo">
+        <a href=""><i class="fa-solid fa-cube"></i></a>
+      </div>
+      <div class="logo-info">
+        <div>
+          <h3>Formulario de Javier</h3>
+        </div>
+        <div>
+          <i>Javier</i> 
+          <button> + Seguir</button>
+        </div>
+      </div>
+    </div>
+    <div class="contenedor-redes">
+      <button class="resdes-boton"> <a href=""><i class="fa-solid fa-heart"></i></a></button>
+      <button class="resdes-boton"> Ver en Editor</button>
+      <button class="resdes-boton-inscribirse"> Incribirse</button>
+      <button class="resdes-boton"> Iniciar sesión</button>
+    </div>
+  </header>
+  <div class="contenedor-principal">
+    <div class="icono-barras">
+      <a href=""><i class="fa-solid fa-bars"></i></a>
+    </div>
+    <div class="formulario-titulo">
+      <h1>Formulario de Javier</h1>
+    </div>
+
+    <div class="contenedor-formulario">
+      <form class="formulario" method="post" target="_blank">
+        <p id="descripcion">Cuentanos algo bueno que paso hoy</p>
+        <div class="datos">
+          <label for="name">Nombre</label>
+          <input type="text" name="nombre" placeholder="Ingresa tu nombre">
+        </div>
+        <div class="datos">
+          <label for="name">Email</label>
+          <input type="text" name="nombre" placeholder="Ingresa tu Email">
+        </div>
+        <div class="datos">
+          <label for="name">En la escala del 1-10 que tan bueno fue</label>
+          <input type="text" name="nombre" placeholder="Ingresa un numero">
+        </div>
+        <div class="datos">
+          <label for="name">Donde ocurrio</label>
+          <select name="ubicacion" id="">
+            <option value="casa">Casa</option>
+            <option value="trabajo">Trabajo</option>
+            <option value="calle">Calle</option>
+            <option value="otro">Otro</option>
+          </select>  
+        </div>
+        <div class="datos">
+          <label for="name">A que hora del día pasó</label>
+          <ul>
+            <li><input type="radio" value="1">&nbsp; Mañana</li>
+            <li><input type="radio" value="2">&nbsp; Tarde</li>
+            <li><input type="radio" value="3">&nbsp; Noche</li>  
+          </ul>
+        </div>
+        <div class="datos">
+          <label for="name">Cuan emocionado estabas</label>
+          <ul>
+            <li><input type="checkbox" value="1">&nbsp; Emocionado</li>
+            <li><input type="checkbox" value="2">&nbsp; Humillado</li>
+            <li><input type="checkbox" value="3">&nbsp; Exaltado</li>  
+            <li><input type="checkbox" value="3">&nbsp; Encantado</li> 
+            <li><input type="checkbox" value="3">&nbsp; Entusiasta</li> 
+          </ul>
+        </div>
+        <div class="datos">
+          <label for="name">Por favor describe tu esperiencia positiva</label>
+          <textarea name="descripcion" id="describe" cols="30" rows="10"></textarea>
+        </div>
+        <div class="contenedor-boton-enviar">
+          <button class="boton-enviar">
+            Enviar
+          </button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</body>
+</html>
